@@ -199,7 +199,7 @@ export default {
 
     },
     quote_text_pattern() {
-      if (!RegExp(/^[А-Яа-я.,A-Za-z?\s:-Ёё-]{0,255}$/).test(this.quote_text)) {
+      if (!RegExp(/^[А-Яа-я.,A-Za-z?\s:-Ёё-]{0,400}$/).test(this.quote_text)) {
         return 'Поле может содержать только буквы(латиница, кириллица), знаки пунктуации, тире, пробелы';
       }
     },
