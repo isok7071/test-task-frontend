@@ -21,7 +21,7 @@ export default {
 
     actions: {
         fetchQuotes(context, pageNumber) {
-            axios.get('http://127.0.0.1:8000/api/quotes?page='+pageNumber,{headers:
+            axios.get('https://test-task-backend-napopravky.herokuapp.com/api/quotes?page='+pageNumber,{headers:
                     {
                         'Content-Type': 'application/json',
                         'charset':'UTF-8',
