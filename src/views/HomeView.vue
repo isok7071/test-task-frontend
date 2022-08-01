@@ -23,10 +23,6 @@
               {{ quote.quote_text }}
 
             </v-card-subtitle>
-            <v-card-text>
-
-              {{ quote.created_at }}
-            </v-card-text>
             <v-chip
                 v-for="tag in quote.tags"
                 :key="tag.id"
