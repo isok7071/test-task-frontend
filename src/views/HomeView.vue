@@ -21,7 +21,6 @@
             </v-card-title>
             <v-card-subtitle>
               {{ quote.quote_text }}
-
             </v-card-subtitle>
             <v-chip
                 v-for="tag in quote.tags"
