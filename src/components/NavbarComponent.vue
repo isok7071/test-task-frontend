@@ -166,13 +166,11 @@ export default {
           'created_at': Date().toLocaleString("en-US", {timeZone: "Europe/Moscow"}),
           'updated_at': Date().toLocaleString("en-US", {timeZone: "Europe/Moscow"}),
         }
-        axios.post('https://test-task-backend-napopravky.herokuapp.com/quotes/add', form_data, {
+        axios.post('https://test-task-backend-napopravky.herokuapp.com/api/quotes/add', form_data, {
           headers:
               {
                 'Content-Type': 'application/json',
                 'charset': 'UTF-8',
-                'Access-Control-Allow-Origin': '*',
-                'Access-Control-Allow-Headers':'*',
               }
         }).then((response) => {
           if (response.status) {
