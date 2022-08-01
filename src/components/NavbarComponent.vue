@@ -58,7 +58,7 @@
 
                           v-model="quote_text"
                           :rules="quote_textRules"
-                          :counter="255"
+                          :counter="400"
                           :error-messages='quote_text_pattern()'
                       ></v-textarea>
                     </v-col>
