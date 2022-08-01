@@ -25,7 +25,9 @@ export default {
                     {
                         'Content-Type': 'application/json',
                         'charset':'UTF-8',
-                    }}).then(response =>
+                        'Access-Control-Allow-Origin': '*',
+
+        }}).then(response =>
                 context.commit('setQuotes', response.data))
         }
     },
