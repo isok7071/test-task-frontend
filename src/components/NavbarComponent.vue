@@ -195,7 +195,7 @@ export default {
               'Content-Type': 'application/json',
               'charset': 'UTF-8',
             }
-      }).then(response => this.tags = response.data)
+      }).then(response => this.tags = response.data.data)
 
     },
     quote_text_pattern() {
