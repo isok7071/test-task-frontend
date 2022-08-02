@@ -59,4 +59,3 @@ export default {
 }
 
 </script>
-#TODO Сделать обработку ошибок
